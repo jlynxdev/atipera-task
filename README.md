@@ -11,7 +11,7 @@ Aplikacja Spring Boot służąca do pobierania informacji o publicznych repozyto
 Do uruchomienia projektu wymagane jest zainstalowane środowisko **JDK 25**.
 
 ## Uruchomienie
-1. Sklonuj repozytorium lub pobierz pliki projektu.
+1. Sklonuj repozytorium.
 2. Przejdź do katalogu głównego projektu.
 3. Uruchom aplikację za pomocą Gradle:
 
@@ -27,8 +27,12 @@ Do uruchomienia projektu wymagane jest zainstalowane środowisko **JDK 25**.
 
 Aplikacja domyślnie uruchamia się na porcie 8080.
 
+## Testy
+
+Aplikacja posiada testy integracyjne z wykorzystaniem WireMock.
+
 ## Użycie
-Aplikacja udostępnia jeden główny punkt końcowy (endpoint):
+Aplikacja udostępnia jeden główny endpoint:
 
 **GET** `/repo/{username}`
 
@@ -36,7 +40,7 @@ Przykład:
 `http://localhost:8080/repo/octocat`
 
 ## Format odpowiedzi
-W przypadku sukcesu (HTTP 200), aplikacja zwraca listę repozytoriów w formacie JSON:
+W przypadku sukcesu, aplikacja zwraca listę repozytoriów w formacie JSON i status HTTP 200:
 
 ```json
 [
