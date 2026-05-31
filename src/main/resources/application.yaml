@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: atipera-task
+
+github-client:
+  base-url: https://api.github.com
+  api-version: 2026-03-10
